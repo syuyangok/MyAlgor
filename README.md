@@ -1,1 +1,2 @@
-# MyAlgor2020-
+Algor in 2020 
+in Java
