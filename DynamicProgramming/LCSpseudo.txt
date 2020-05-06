@@ -2,7 +2,7 @@ Longest Common Subsequence
 
 LCS(X,Y):
 
-create a 2 dimension array, L;
+create a 2 dimension array, L[n+1][n+1]
 
 //fill the first line of x, y with 0
 for row=0 -> n:
@@ -10,6 +10,7 @@ for row=0 -> n:
 for col=0 -> n:
   L(0, col) = 0;
 
+//start from second line
 for row=1 -> n:
   for col=1 -> n:
   if (Xrow == Ycol):
