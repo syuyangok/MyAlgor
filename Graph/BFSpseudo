@@ -1,0 +1,15 @@
+Bread First search
+
+Input G, v;
+
+label v as visited;
+Greate a Q;
+Q.enqueue(v);
+
+While Q is not empty:
+  Q.dequeue();
+  for w (every neighbor of v):
+    if w is not visited:
+      lab w as visited;
+      Q.enqueue(w);
+ 
