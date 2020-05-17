@@ -1,0 +1,20 @@
+
+
+
+
+//simper version, 
+
+wn, vn, capcity
+
+create a array DP[capcity+1];
+
+for(w=1; w<=capcity; w++){
+   DP[w] = 0;
+   for(i=1; i<=n; i++){
+      if (wi< w  && DP[w]< DP[w-wi]+ vi) 
+        DP[w] = DP[w-wi]+ vi;
+   
+   }
+   
+}
+return DP[capcity]
