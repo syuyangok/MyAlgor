@@ -1,5 +1,19 @@
 
+create a 2d array DP[n+1][capcity+1];
 
+// init array first line, row to zero
+
+//file the array
+for(i=1; i<=n; i++){
+   
+   for(w=1; w<=capcity; w++){
+      if (wi< w )
+         DP[i][w] max{ DP[i][w-wi]+ vi), DP[i-1][w]  }
+        
+   
+   }
+   
+}
 
 
 //simper version, 
