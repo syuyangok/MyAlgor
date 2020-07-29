@@ -1,0 +1,20 @@
+#s, start node;
+#w, edge cost
+BellmanFord(G, s, w):
+
+  #create a two d array
+  D() = D[n-1][n]; # n is the number of nodes. row is the edge we at most use; col is the node, 
+  
+  #initi array
+  for(c = 0; c<n; c++) D[0][c] = $;
+  D[0][0] = 0; # s node itself;
+  
+  for(i=0; i<n-1; i++):
+    #first set current row value equale to previous row value 
+    for(c = 0; c<n; c++) D[i][c] = i[i-1][c];
+    
+    for(all edges yz to node z):
+      if(D[i][c] > D[i-1][y]+ w(yz)) D[i][c] > D[i-1][y]+ w(yz);
+    
+  return D[n-1][.]; # return the whole last row;
+
