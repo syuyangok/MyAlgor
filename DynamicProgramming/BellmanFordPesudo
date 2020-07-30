@@ -13,8 +13,8 @@ BellmanFord(G, s, w):
     #first set current row value equale to previous row value 
     for(c = 0; c<n; c++) D[i][c] = i[i-1][c];
     
-    for(all edges yz to node z):
-      if(D[i][c] > D[i-1][y]+ w(yz)) D[i][c] > D[i-1][y]+ w(yz);
+    for(all edges yz belong to G):
+      if(D[i][z] > D[i-1][y]+ w(yz)) D[i][z] > D[i-1][y]+ w(yz);
     
   return D[n-1][.]; # return the whole last row;
 
