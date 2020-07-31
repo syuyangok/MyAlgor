@@ -17,4 +17,9 @@ BellmanFord(G, s, w):
       if(D[i][z] > D[i-1][y]+ w(yz)) D[i][z] > D[i-1][y]+ w(yz);
     
   return D[n-1][.]; # return the whole last row;
+  
+  
+  # check negative cycle
+  
+  if  any D[n][a][a] <0, there is a negative cycle
 
