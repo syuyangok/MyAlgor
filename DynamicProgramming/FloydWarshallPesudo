@@ -17,3 +17,7 @@ FloydWarshall(G, w):
       
   return D[n][.][.]
   
+    # check negative cycle
+  
+  if  any D[n][a][a] <0, there is a negative cycle
+  
