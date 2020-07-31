@@ -14,12 +14,12 @@ BellmanFord(G, s, w):
     for(c = 0; c<n; c++) D[i][c] = i[i-1][c];
     
     for(all edges yz belong to G):
-      if(D[i][z] > D[i-1][y]+ w(yz)) D[i][z] > D[i-1][y]+ w(yz);
+      if(D[i][z] > D[i-1][y]+ w(yz)) D[i][z] = D[i-1][y]+ w(yz);
     
   return D[n-1][.]; # return the whole last row;
   
   
   # check negative cycle
   
-  if  any D[n][a][a] <0, there is a negative cycle
+  if  any D[n][.]<0, there is a negative cycle
 
