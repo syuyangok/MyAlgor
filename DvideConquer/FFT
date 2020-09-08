@@ -1,7 +1,17 @@
 
 FFT(a, w):
     // Base case
-    if n=1, return a<sub>0</sub>;
+    if n=1, return a0;
     
-    Let aever
+    Let a_even ={a0, a2, a4,.... an-2} 
+    Let a_odd ={a1, a3, a5,.... an-1} 
+    
+    (S0, S1, S2,.. Sn/2 -1) = FFT(a_even, w2)
+    (t0, t1, t2,.. tn/2 -1) = FFT(a_odd, w2)
+    
+    for j =0 to n/2 -1:
+        rj = Sj + wj tj
+        rn/2+j = Sj - wj tj
+    
+    return (r0, r1, r2... rn-1)
     
