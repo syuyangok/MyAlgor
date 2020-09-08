@@ -1,0 +1,21 @@
+// for array A, find kth item. 
+//run time O(nlog(n))
+
+FastSelect(A, k):
+
+  //Find good pivot.
+  Break A to n/5 subgroups(G1, G2...Gn/5), each group have 5 items.   
+  
+  For i =1 to n/5:
+      Sort every subgroups.
+      create S with mi, mi= median(Gi)
+      
+  // S, have n/2 items, n/10 is median
+  p= FastSelect(S, n/10) 
+  
+  //after found pivot
+  Break A to A<p, A=p, A>p 3 group
+  if k <= |A-p|, return FastSelect(A<p, k )
+  if |A-p| < k <=|A-p| + |A=p|, return p 
+  if k > |A-p| + |A=p|, return FastSelect(A>p, k-|A-p| - |p| )
+      
