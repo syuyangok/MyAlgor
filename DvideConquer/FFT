@@ -1,0 +1,7 @@
+
+FFT(a, w):
+    // Base case
+    if n=1, return a<sub>0</sub>;
+    
+    Let aever
+    
