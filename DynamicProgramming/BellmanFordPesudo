@@ -7,14 +7,14 @@ BellmanFord(G, s, w):
   
   #initi array
   for(c = 0; c<n; c++) D[0][c] = $;
-  D[0][0] = 0; # s node itself;
+  D[0][s] = 0; # s node itself;
   
   for(i=1; i<= n-1; i++):
     #first set current row value equale to previous row value 
     for(c = 0; c<n; c++) D[i][c] = i[i-1][c];
     
-    for(all edges yz belong to G):
-      if(D[i][z] > D[i-1][y]+ w(yz)) D[i][z] = D[i-1][y]+ w(yz);
+    for(all edges yc belong to G):
+      if(D[i][c] > D[i-1][y]+ w(yc)) D[i][c] = D[i-1][y]+ w(yz);
     
   return D[n-1][.]; # return the whole last row;
   
