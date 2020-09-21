@@ -1,0 +1,22 @@
+Graph: G, n vetex, E
+
+DFS(G):
+  count =0;
+  for all v in G:
+      visited(v) = false;
+      prev(v) = null; // array use to find path
+      
+  for all v in G:
+      if not visited(v):
+          count++;
+          
+          explore(v);
+          
+ Explore(node z):
+    visited(z) = True;
+    
+    // visited all the neighbors
+    for all (z, w) in E :   
+        if not visited(w):
+            prev = (z);
+            explore(w);
