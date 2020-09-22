@@ -1,0 +1,8 @@
+//Extented Eculid 
+// to find X-1 mod N, 
+
+input:  int x, y 
+
+output: d, a, b, where d = gcd(x,y); d=ax+by; X-1 mod N = a (a*x =1 mod N)
+
+ExtEuclid()
