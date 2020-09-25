@@ -1,5 +1,7 @@
 Graph: G, n vetex, E
 
+
+//Version for unDirected graph
 DFS(G):
   count =0;
   for all v in G:
@@ -13,10 +15,39 @@ DFS(G):
           explore(v);
           
  Explore(node z):
-    visited(z) = True;
+    visited(z) = True
+    scc = count;  // label strongly connected groups!
     
     // visited all the neighbors
     for all (z, w) in E :   
         if not visited(w):
             prev = (z);
             explore(w);
+            
+            
+ 
+//Version for Directed graph, with pre# and post#
+DFS(G):
+  clock =1;
+  for all v in G:
+      visited(v) = false;      
+      
+  for all v in G:
+      if not visited(v):         
+          
+          explore(v);
+          
+ Explore(node z):
+    visited(z) = True;
+    pre# = clock;
+    clock++;
+    
+    // visited all the neighbors
+    for all (z, w) in E :   
+        if not visited(w):            
+            explore(w);
+    //after finish all the neighbors, label post#
+    post# = clock;
+    clock++;
+            
+
