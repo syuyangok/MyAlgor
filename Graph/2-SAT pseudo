@@ -1,0 +1,13 @@
+//Lemma:
+For some i, if xi & xi- are in same SCC, then not satisify
+For all i, if xi & xi- are in differenct SCC, then  satisify
+
+//Key facts: if for all i, xi & xi- are in different SCC, then S is a sink SCC, S- is a source SCC.
+
+// 2SAT(formula f):
+    1 Construct graph G for f.
+    2 Run SCC, get sink S.
+    3 Take a sink S:
+          set S = true  (S- = false)
+          remove S and S-
+          repeat untile empty.
