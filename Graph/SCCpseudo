@@ -1,8 +1,12 @@
 //Strongly connected compentes
+
+
+
+
 SCC(G):
     1 Construct GR
     2 Run DFS on GR, //to get postorder number, max post# is source vertex, which is sink vertex in G.
     3 Order vertex by post# decrease, // first vertex source vertex
-    4 Run DFS again(undirected connected components), on Ordered above vertex, 
+    4 Run DFS again(undirected connected components) on G, on Ordered above vertex, 
     
  Run time:  Two DFS, O(n+M)
