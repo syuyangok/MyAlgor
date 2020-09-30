@@ -1,0 +1,17 @@
+//use DFS to find a graph is two color or not
+
+DFS()
+create a array to record color of every veterx. 
+color[] = 1/0
+
+Explore(z):
+    
+    for neighbors w of z:
+        if w is not visited:
+                color[w] is oppsite of color[z]
+        
+        if w already visited:
+                if color[w] == color[z]: return false
+                
+                
+ return true
