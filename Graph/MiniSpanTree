@@ -1,0 +1,16 @@
+// Tree:  Every vertex is connected; Iff have n-1 edges
+
+input: undirected G, with weight edge w(e)
+Kruskal's(G):
+    1 Sort edge with w increase
+    2 Create empty tree, X
+    3 Loop edges(v, w) in order:
+          if Xu e doesn't have a cycle, then: X= Xu e
+    4 return X
+    
+    
+    // check if Xu e doesn't have a cycle: before add, if componets(v) = componets(w), then it is a cycle.
+    
+    
+Run time:
+Dominated by sort = O(|E|log|V|)
