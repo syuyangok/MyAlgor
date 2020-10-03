@@ -24,3 +24,8 @@ public class Euclid {
 
     }
 }
+
+// run time:
+//each round: O(n^2)   for x mod y
+//  <= 2n round, O(n)   every other round, x decrease 2
+//total run time  O(n^3)
