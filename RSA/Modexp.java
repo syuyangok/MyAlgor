@@ -26,3 +26,7 @@ public class Modexp {
     }
 
 }
+//run time:
+//Each round,  O(n^2) for zz%N,
+// logy  round, O(n)
+//total run time  O(n^3)
