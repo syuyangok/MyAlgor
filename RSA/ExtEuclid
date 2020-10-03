@@ -1,8 +1,19 @@
 //Extented Eculid 
 // to find X-1 mod N, 
 
-input:  int x, y 
+input:  int x, y   (x>= y >= 0)
 
 output: d, a, b, where d = gcd(x,y); d=ax+by; X-1 mod N = a (a*x =1 mod N)
 
-ExtEuclid()
+ExtEuclid():
+    if y =0: return (x,1,0 )  // x = 1*x + 0y
+  
+    (d, a`, b`) = ExtEuclid(y, x mod y)
+  
+    return (d, b`, a`- |x/y|b`)
+  
+  
+//run time:
+//each round  O(n^2)
+//n round
+//Total run time  O(n^3)
