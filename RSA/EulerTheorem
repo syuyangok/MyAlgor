@@ -1,0 +1,14 @@
+
+Fermat's little Theorem:
+    if p is prime, for every 1<= Z <= p-1, (z is relative prime to p)
+    Z^p-1 mod p =1   (Z^p-1 and p are relative prime)
+    
+General version:
+Euler Theorem:
+
+if p, z is relative prime, ( gcd(N, z) = 1)
+    Z^(N) mod N =1          where, (N) is nubmer of integers are relative to N (  1<= x<=N,  gcd(x, N) =1)
+    
+    if N is prime, (N) = p-1
+    if N=p*q  (p is prime, q is prime)  (N) = (p-1)(q-1)
+    
