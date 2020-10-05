@@ -1,6 +1,6 @@
 
 Fermat's little Theorem:
-    if p is prime, for every 1<= Z <= p-1, (z is relative prime to p)
+    if p is prime, z is relative prime to p
     Z^p-1 mod p =1   (Z^p-1 and p are relative prime)
     
 General version:
