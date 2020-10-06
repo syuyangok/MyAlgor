@@ -1,6 +1,7 @@
 Bread First search
 
 Input G, v;
+Output: For all vertices u reachable from s, dist(u) is set to the distance from s to u.
 
 label v as visited;
 Greate a Q;
@@ -13,3 +14,6 @@ While Q is not empty:
       lab w as visited;
       Q.enqueue(w);
  
+// run time O(|V| + |E|)
+// Use this for unweighted Single Source Shortest Path (SSSP)
+
