@@ -1,5 +1,7 @@
 Graph: G, n vetex, E
 
+// run time O(|V| +|E|)
+
 
 //Version for unDirected graph
 DFS(G):
