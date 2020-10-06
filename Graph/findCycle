@@ -22,9 +22,9 @@ DFS()
 Explore(z)
   onStack[z]=true.
   for neighbors w of z:
-  if w not visited....
+    if w not visited....
   
-  if w already visited, and onStack[w] = true, 
+    if w already visited, and onStack[w] = true, 
       then there is a cycle
       
   onStack[z]=false //set to false, before quit Explore.
