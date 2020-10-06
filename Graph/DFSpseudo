@@ -18,7 +18,7 @@ DFS(G):
           
  Explore(node z):
     visited(z) = True
-    scc = count;  // label strongly connected groups!
+    cc = count;  // label  connected componets! scc(strongly cc) is for directed graph
     
     // visited all the neighbors
     for all (z, w) in E :   
