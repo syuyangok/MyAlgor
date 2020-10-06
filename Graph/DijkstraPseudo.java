@@ -2,6 +2,9 @@
 #n, number of nodes
 #s, the node of start
 
+//run time O( (|V|+|E|)log|V| )
+// Use for weighted single source shortest path, no negative
+
 function dijkstra(g, n, s):
   #create a array to record vistied nodes
   visit[] = [false, false, false,....]; #size n
