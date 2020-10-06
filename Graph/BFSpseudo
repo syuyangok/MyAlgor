@@ -16,4 +16,5 @@ While Q is not empty:
  
 // run time O(|V| + |E|)
 // Use this for unweighted Single Source Shortest Path (SSSP)
+// for weighted we need use Dijkstra
 
