@@ -1,0 +1,17 @@
+
+
+Ford-Fulkseron:
+1 Let fe = 0,  for all e
+2  Create Residual network Gf for G.
+
+
+3 Find path S-t path in Gf,
+    if no such path, return current flow
+    
+4 if have path: Given p, let c(p) = min capcity alone p in Gf,
+                Augment f by c(p) units, alone p
+5 repeat 3-5 step,  untile no such path. 
+
+
+// run time: O(Cm)    C is size of max flow.
+//  m is run time of DFS/BFS in step 3, bounded by O(|E|), because m = n-1
