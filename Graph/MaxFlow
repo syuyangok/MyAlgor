@@ -10,7 +10,7 @@ Ford-Fulkseron:
     
 4 if have path: Given p, let c(p) = min capcity alone p in Gf,
                 Augment f by c(p) units, alone p
-5 repeat 3-5 step,  untile no such path. 
+5 repeat 2-5 step,  untile no such path. 
 
 
 // run time: O(Cm)    C is size of max flow.
