@@ -15,3 +15,10 @@ Ford-Fulkseron:
 
 // run time: O(Cm)    C is size of max flow.
 //  m is run time of DFS/BFS in step 3, bounded by O(|E|), because m = n-1
+
+
+Edmonds-Karp
+
+Use BFS in above s-t path search.
+// run time: O(nm`2)    
+//  run nm round, bounded by O(|V||E|)
