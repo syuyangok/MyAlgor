@@ -1,10 +1,10 @@
 
 1 Find N, where N=p*q, p, q are prime
 
-2 Find private key e, where e and (p-1)(q-1) is relative, (because thus, e have multive inverse d, )
+2 Find public key e, where e and (p-1)(q-1) is relative, (because thus, e have multive inverse d, )
   gcd(e, (p-1)(q-1))   // here, we use Euclid method.
   
-3 Find public key, d, e*d mod (p-1)(q-1) =1 // here, we use ExtEuclid method.
+3 Find private key, d, e*d mod (p-1)(q-1) =1 // here, we use ExtEuclid method.
 
 4 public key (N, e)
 5 Encrypt:  y= m^e mod N 
