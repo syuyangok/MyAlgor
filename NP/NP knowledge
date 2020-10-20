@@ -1,0 +1,14 @@
+
+NP problem: problems can be verified in polynomial time.
+P problem:  problems can be solved in polynomial time.
+
+p belong to NP !             NP belong to P ???
+
+NPC: (NP completed problems)
+    1 It's a NP problem.  2 All NP problems can reduction to this problem.
+    First NPC problem: SAT
+    Since all NP can change to NPC, so if one NPC has polynomial time solution, then all NP has polynomial solutions.
+
+NP-Hard: 
+    1 It's NOT a NP problem(Means can not verified in polynomial time ??).  2 All NP problems can reduction to this problem.
+
