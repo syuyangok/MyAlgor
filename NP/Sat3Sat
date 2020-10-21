@@ -1,0 +1,21 @@
+SAT to 3SAT
+
+input: SAT with k variable
+
+Consider f for SAT
+Create f` for use in 3SAT
+  for each clause in SAT:
+      if |C| <= 3, add C to f`;
+      if |C| > 3:
+          create k-3 new variable
+          create new clause C` and add to f`
+          
+ f is satisfiable == f` is satisfiable
+ 
+ 
+ How to Create C`:
+    create k-3 new variable;
+    create k-2 new clauses to replace old C, as follow:
+          C`= (a1 v a2 v y1) ^ (y1- v a3 v y2) ^ (y2- v a4 v y3) ..... ^ (yk-3 - v ak-1 v ak) 
+          
+  C is satisfiable == C` is satisfiable
