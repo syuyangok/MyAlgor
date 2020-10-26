@@ -1,6 +1,7 @@
 
 Optimum of LP is achived a vetex of feasible region, except:
 a) Infeasible = feasible region is empty:
-     Only constrain functions are infeasible. Noting to do with Object function.
+     Only dependents on constrain functions( constrain functions are infeasible). Noting to do with Object function.
      
 b) unbounded = optimum is arbitarily large.
+       Only dependents on objective function
