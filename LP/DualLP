@@ -1,4 +1,15 @@
 
+
+Strong Duality:
+  Prime LP is feasible and bounded, if and only if, Dual LP is feasible and bounded, 
+  Prime LP has optimal x*, if and only if, Dual LP has optimal y*;   & cTx* = bTy*
+
+Weak Duality:
+  Prime LP is feasible ,  Dual LP is feasible, then: 
+      cTx <= bTy
+
+
+
 If we found feasible x & feasible y, where cTx = bTy, then:
   x & y are optimal.
 
