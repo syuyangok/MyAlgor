@@ -7,3 +7,14 @@ if Primal LP is unbounded, then Dual LP is infeasible.
 if Dual LP is unbounded, then prime LP is infeasible.
 
     if Dual LP is infeasible, then prime LP is infeasible/unbounded.
+    
+    
+********************
+
+How to check if Primal LP is unbounded ?
+
+  first, we check if Primal LP is feasible:
+      Add a new z, to make Ax +z <= b; if z is non-negative, LP is feasible; Otherwise, LP is infeasible;
+  
+  Then, we check if Dual LP is feasible:
+      if Dual LP is infeasible, and prime LP feasible, then prime LP is unbounded
