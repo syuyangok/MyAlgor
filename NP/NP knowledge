@@ -12,5 +12,5 @@ NPC: (NP completed problems)
     So if P!= NP, all NPC are not in P. (Becuase if any NPC in P, all the NP will in P, which is contradict our asumption)
 
 NP-Hard: 
-    1 It's NOT a NP problem(Means can not verified in polynomial time ??).  2 All NP problems can reduction to this problem.
+    1 It's Maybe/NOT a NP problem(Means can not verified in polynomial time ??)????.  2 All NP problems can reduction to this problem.
 
