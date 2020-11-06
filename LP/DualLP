@@ -13,9 +13,9 @@ Weak Duality:
 If we found feasible x & feasible y, where cTx = bTy, then:
   x & y are optimal.
 
-if Primal LP is unbounded, then Dual LP is infeasible.
+if Primal LP is unbounded, then Dual LP is infeasible.  Contra-positive: If Dual LP is feasible, then prime LP is bounded.
 
-if Dual LP is unbounded, then prime LP is infeasible.
+if Dual LP is unbounded, then prime LP is infeasible.   Contra-positive: If prime is feasible, then dual LP is bounded.
 
     if Dual LP is infeasible, then prime LP is infeasible/unbounded.
     
