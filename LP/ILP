@@ -1,0 +1,5 @@
+
+If the LP is infeasible, then the ILP is infeasible.
+
+If the LP is feasible, then either the ILP is infeasible, or the ILP is feasible 
+  and LPopt ≥ ILPopt (in case of a maximization problem)
