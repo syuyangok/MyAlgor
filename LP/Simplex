@@ -1,7 +1,18 @@
+If we have n variables, and m constrains funcitons:
+     then we have n dimensions.
+     then we have total n+m constrains.(Because, for each variable musht >=0)
+     Feasible = intersection of n+m halfspace in n dimensions.
+     
+     Vertices = points satisfying:  
+          n constrains with =
+          m constrains with <=
+     We have Vertices <= choose n from (n+m). Neighbors <= nm 
+     
+
 
 Optimum of LP is achived a vetex of feasible region, except:
 a) Infeasible = feasible region is empty:
      Only dependents on constrain functions( constrain functions are infeasible). Noting to do with Object function.
      
 b) unbounded = optimum is arbitarily large.
-       Only dependents on objective function
+       Only dependents on objective function ???
