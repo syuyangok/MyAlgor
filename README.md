@@ -1,2 +1,1 @@
-Algor in 2020 
-in Java
+Algorithm in Java
