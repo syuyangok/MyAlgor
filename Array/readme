@@ -1,0 +1,5 @@
+Problems related to array.
+
+Many problems can solved by two pointers.
+1 left pointer and right pointer.
+2 fast pointer and left pointer. (find duplicate)
