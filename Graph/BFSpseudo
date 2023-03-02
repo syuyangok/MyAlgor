@@ -1,18 +1,23 @@
 Bread First search
 
-Input G, v;
+Input G, s;
 Output: For all vertices u reachable from s, dist(u) is set to the distance from s to u.
 
 label v as visited;
-Greate a Q;
-Q.enqueue(v);
+Create dist(u) = infi with all u belong to V.  dist(s) = 0;
+Create prev(u) = empty,  //to record previous back track to start node.
+Create a Q;
+Q.enqueue(s);
 
 While Q is not empty:
-  Q.dequeue();
+  v = Q.dequeue();
   for w (every neighbor of v):
-    if w is not visited:
-      lab w as visited;
-      Q.enqueue(w);
+    if dist(w) is infi //w is not visited:
+     dist(w) = dist(v) +1;
+     prev(w) = v;
+     Q.enqueue(w);
+ 
+ return dist, prev;
  
 // run time O(|V| + |E|)
 // Use this for unweighted Single Source Shortest Path (SSSP)
