@@ -9,6 +9,26 @@ import java.util.HashSet;
  //Given head, the head of a linked list, determine if the linked list has a cycle in it.
 
 public class linkedListCycle {
+ 
+     //no need to check speical case, best solution!
+    public boolean twoPointers(ListNode head) {
+
+        ListNode s1 = head; // pointer 1 slow, step 1
+        ListNode s2 = head; // pointer 2 fast, step 2
+
+        //use faster pointer do null check
+        while(s2 != null && s2.next != null){
+            s1 = s1.next;
+            s2 = s2.next.next;
+
+            if(s1 == s2){
+                return true;
+            }
+        }
+
+        return false;
+    }
+ 
 
     public boolean solution5(ListNode head){
         //check special case
