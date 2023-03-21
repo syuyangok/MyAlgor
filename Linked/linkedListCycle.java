@@ -7,7 +7,7 @@ import java.util.HashSet;
  
  //leetcode 141
  //Given head, the head of a linked list, determine if the linked list has a cycle in it.
-
+ // extend, find cycle length
 public class linkedListCycle {
  
      //no need to check speical case, best solution!
@@ -29,6 +29,36 @@ public class linkedListCycle {
         return false;
     }
  
+ 
+    //find cycle length, if has cycle, from first two pointers meet, to second pointers meet,
+    //the distance is the cycle length
+    public int cycleLength(ListNode head) {
+
+        ListNode s1 = head; // pointer 1 slow, step 1
+        ListNode s2 = head; // pointer 2 fast, step 2
+        int meet = 0;
+        int dis = 0;
+
+        //use faster pointer do null check
+        while(s2 != null && s2.next != null){
+            s1 = s1.next;
+            s2 = s2.next.next;
+            //if have met.
+            if(meet ==1 ){
+                dis++;
+            }
+
+            if(s1 == s2){
+                meet++;
+                //if it's second time meet.
+                if (meet == 2){
+                    return dis;
+                }
+            }
+        }
+
+        return -1;
+    }
 
     public boolean solution5(ListNode head){
         //check special case
