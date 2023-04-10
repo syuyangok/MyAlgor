@@ -4,6 +4,62 @@ package com.yuyang.leetcode.matrix;
 //key point, keep recording top left start position.
 //And adjust, top-left position, after one loop end.
 public class ApplePeeler {
+    
+        public static void main(String[] args) {
+        int[][] m = {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9},
+        };
+
+        System.out.println(spiral(m));
+    }
+    
+    // best methods.
+        public static List<Integer> spiral(int[][] matrix){
+        List<Integer> ret = new ArrayList<>();
+
+        int height = matrix.length;
+        int wide = matrix[0].length;
+
+        //2d array nested size is up to small of(height, wide)/2
+        int nestSize = (Math.min(height, wide)+1) /2;       
+        
+        
+        //clock wise loop 2d array, i represents current looped nestSize
+        for (int i = 0; i <= nestSize-1; i++) {
+            
+            //up
+            for (int col = i; col <=wide-1-i ; col++) {
+
+                ret.add(matrix[i][col]);
+                System.out.println(matrix[i][col]);
+            }
+
+            //right side
+            for (int row = i+1; row <=height-1-i ; row++) {
+
+                ret.add(matrix[row][wide-1-i]);
+                System.out.println(matrix[row][wide-1-i]);
+            }
+
+            //bottom side
+            for (int col = wide-1-i-1; col >=i ; col--) {
+                ret.add(matrix[height-1-i][col]);
+                System.out.println(matrix[height-1-i][col]);
+            }
+
+            //left side
+            for (int row = height-1-i-1; row >=i+1 ; row--) {
+                ret.add(matrix[row][i]);
+                System.out.println(matrix[row][i]);
+            }            
+        }
+
+        return ret;
+    }
+
+
 
     public static int[] Peel(int[][] m){
         //safe check
